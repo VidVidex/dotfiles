@@ -56,4 +56,4 @@
     - rclone@OD-uni
     - rclone@GD-uni
     - rclone@Mega-vidsmole
-  changed: false
+  changed_when: false
