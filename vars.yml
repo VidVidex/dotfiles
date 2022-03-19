@@ -11,6 +11,7 @@ essential_packages:
   - thunderbird
   - gparted
   - libqalculate
+  - jetbrains-mono-fonts-all
 
 # Packages that do not need to be installed on every host but are often needed
 additional_packages:
