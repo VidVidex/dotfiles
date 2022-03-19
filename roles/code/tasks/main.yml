@@ -1,0 +1,23 @@
+---
+- name: Create code config directory
+  file:
+    path: ~/.config/Code/User
+    state: directory
+
+- name: Symlink user snippets
+  file:
+    src: ~/dotfiles/roles/code/files/snippets
+    dest: ~/.config/Code/User/snippets
+    state: link
+
+- name: Symlink keybindings.json
+  file:
+    src: ~/dotfiles/roles/code/files/keybindings.json
+    dest: ~/.config/Code/User/keybindings.json
+    state: link
+
+- name: Symlink settings.json
+  file:
+    src: ~/dotfiles/roles/code/files/settings.json
+    dest: ~/.config/Code/User/settings.json
+    state: link

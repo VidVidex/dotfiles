@@ -1,0 +1,17 @@
+{
+    "workbench.colorTheme": "Default Dark+",
+    "editor.fontFamily": "'Jetbrains mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.fontLigatures": true,
+    "editor.formatOnType": true,
+    "terminal.integrated.fontFamily": "\"Jetbrains mono\"",
+    "workbench.startupEditor": "none",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
+    "markdown-pdf.breaks": true,
+    "markdown-pdf.displayHeaderFooter": false,
+    "workbench.editor.restoreViewState": false,
+    "C_Cpp.autocompleteAddParentheses": true,
+    "C_Cpp.clang_format_fallbackStyle": "LLVM",
+    "window.zoomLevel": 1,
+}

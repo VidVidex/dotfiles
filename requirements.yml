@@ -1,0 +1,9 @@
+---
+roles:
+  - name: geerlingguy.security
+  - name: robertdebock.rpmfusion
+  - name: gantsign.antigen
+  - name: gantsign.visual-studio-code
+
+
+collections: []

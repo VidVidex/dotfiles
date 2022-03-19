@@ -6,7 +6,7 @@ For a while now I've been using [dotbot](https://github.com/anishathalye/dotbot)
 
 0. You have to install ansible. You can get a reasonably new version with `pip`.
 
-1. To install this on a remote host you first have to manually enable (or just start for a single install) sshd. You can skip this step if you are just installing this on your local machine.
+1. To install this on a remote host you first have to manually enable (or just start for a single install) sshd. You can skip this step if you are just installing this on your local machine. For better security use key-based authentication.
     ```sh
     sudo systemctl enable --now sshd
     ```

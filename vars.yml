@@ -1,0 +1,41 @@
+dotfile_location: ~/
+
+# Packages that must be installed on every host
+essential_packages:
+  - firefox
+  - flameshot
+  - htop
+  - nmap
+  - keepassxc
+  - telnet
+  - thunderbird
+  - gparted
+  - libqalculate
+
+# Packages that do not need to be installed on every host but are often needed
+additional_packages:
+  - vlc
+  - discord
+  - qbittorrent
+  - calibre
+  - wireshark
+  - docker
+  - qalculate-kde
+
+# Packages that are installed by default but are not wanted
+remove_packages:
+  - kmnines
+  - kcacl
+  - dragon
+  - spectacle
+  - kmouth
+  - elisa
+  - kmahjongg
+  - kpatience
+  - konversation
+
+
+## geerlingguy.security
+security_autoupdate_enabled: false
+security_ssh_allowed_users:
+ - vid

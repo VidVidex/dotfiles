@@ -1,0 +1,36 @@
+---
+- name: Install taskwarrior
+  package:
+    name: task
+    state: latest
+    update_cache: true
+  become: True
+
+- name: Symlink .taskrc
+  file:
+    src: ~/dotfiles/roles/taskwarrior/files/.taskrc
+    dest: ~/.taskrc
+    state: link
+
+- name: Create task directory
+  file:
+    path: ~/.task
+    state: directory
+
+- name: Copy keys
+  copy:
+    src: "{{ item.src }}"
+    dest: "{{ item.dest }}"
+  loop:
+    - src: files/ca.cert.pem
+      dest: ~/.task/ca.cert.pem
+    - src: files/Vid_Smole.cert.pem
+      dest: ~/.task/Vid_Smole.cert.pem
+    - src: files/Vid_Smole.key.pem
+      dest: ~/.task/Vid_Smole.key.pem
+
+- name: Create a cronjob for syncing with taskserver
+  cron:
+    name: task sync
+    job: "/usr/bin/task sync"
+    

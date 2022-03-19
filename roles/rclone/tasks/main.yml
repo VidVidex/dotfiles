@@ -1,0 +1,59 @@
+---
+- name: Install rclone
+  package:
+    name: rclone
+    state: latest
+    update_cache: true
+  become: True
+
+- name: Create rclone directory
+  file:
+    path: ~/.config/rclone
+    state: directory
+
+- name: Copy config
+  copy:
+    src: files/rclone.conf
+    dest: ~/.config/rclone/rclone.conf
+
+- name: Create mount directories
+  file:
+    path: "{{ item }}"
+    state: directory
+    owner: vid
+    group: vid
+  loop:
+    - ~/B2-vidsmole
+    - ~/DB-vidsmole
+    - ~/GD-vidsmole
+    - ~/OD-vidsmole
+    - ~/GD-smolevid
+    - ~/OD-uni
+    - ~/GD-uni
+    - ~/Mega-vidsmole
+
+- name: Copy rclone service
+  copy:
+    src: files/rclone@.service
+    dest: /etc/systemd/user/rclone@.service
+  register: copy_rclone_service
+  become: true
+
+- name: Reload systemctl daemon
+  systemd:
+    daemon_reload: yes
+  when: copy_rclone_service.changed
+  become: true
+
+- name: Restart and enable rclone services
+  command: "systemctl --user --now enable {{ item }}"
+  loop:
+    - rclone@B2-vidsmole
+    - rclone@DB-vidsmole
+    - rclone@GD-vidsmole
+    - rclone@OD-vidsmole
+    - rclone@GD-smolevid
+    - rclone@OD-uni
+    - rclone@GD-uni
+    - rclone@Mega-vidsmole
+  changed: false

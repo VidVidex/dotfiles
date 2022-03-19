@@ -1,0 +1,13 @@
+---
+- name: Install git
+  package:
+    name: git
+    state: latest
+    update_cache: true
+  become: True
+
+- name: Symlink .gitconfig
+  file:
+    src: ~/dotfiles/roles/git/files/.gitconfig
+    dest: ~/.gitconfig
+    state: link

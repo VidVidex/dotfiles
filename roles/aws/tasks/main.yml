@@ -1,0 +1,41 @@
+---
+- name: Check if aws is already installed
+  stat:
+    path: /usr/local/bin/aws
+  register: aws_exists
+
+- name: Download awscliv2.zip
+  get_url:
+    url: https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip
+    dest: /tmp/awscliv2.zip
+  when: not aws_exists.stat.exists
+
+- name: Extract awscliv2.zip
+  unarchive:
+    src: /tmp/awscliv2.zip
+    dest: /tmp
+    remote_src: True
+  when: not aws_exists.stat.exists
+
+- name: Install aws cli
+  command:
+    cmd: /tmp/aws/install
+    creates: /usr/local/bin/aws
+  become: True
+  when: not aws_exists.stat.exists
+
+- name: Create aws directory
+  file:
+    path: ~/.aws
+    state: directory
+
+- name: Copy config
+  copy:
+    src: files/config
+    dest: ~/.aws/config
+
+- name: Copy credentials
+  copy:
+    src: files/credentials
+    dest: ~/.aws/credentials
+

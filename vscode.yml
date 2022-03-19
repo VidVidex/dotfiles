@@ -1,0 +1,26 @@
+---
+- name: Visual Studio Code
+  hosts: hosts
+
+  vars_files:
+  - vars.yml
+
+  pre_tasks:
+
+  roles:
+    - role: gantsign.visual-studio-code
+      become: true
+      vars:
+        users:
+        - username: vid
+          visual_studio_code_extensions:
+            - redhat.ansible
+            - ms-vscode.cpptools
+            - James-Yu.latex-workshop
+            - darkriszty.markdown-table-prettify
+            - ms-python.vscode-pylance
+            - ms-python.python
+            - timonwong.shellcheck
+            - redhat.vscode-yaml
+          visual_studio_code_settings_overwrite: false
+    - role: code
