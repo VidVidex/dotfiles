@@ -14,4 +14,5 @@
     "C_Cpp.autocompleteAddParentheses": true,
     "C_Cpp.clang_format_fallbackStyle": "LLVM",
     "window.zoomLevel": 1,
+    "explorer.confirmDelete": false,
 }
