@@ -1,0 +1,13 @@
+---
+- name: Symlink .aliases
+  file:
+    src: ~/dotfiles/roles/zsh/files/.aliases
+    dest: ~/.aliases
+    state: link
+
+- name: Source .aliases
+  lineinfile:
+    path: '~/.zshrc'
+    line: 'source ~/.aliases'
+    create: yes
+    mode: 'u=rw,go=r'

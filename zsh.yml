@@ -1,0 +1,32 @@
+---
+- name: zsh
+  hosts: hosts
+
+  vars_files:
+  - vars.yml
+
+  pre_tasks:
+
+  roles:
+    - role: gantsign.antigen
+      become: true
+      vars:
+        users:
+          - username: vid
+            antigen_libraries:
+              - name: oh-my-zsh
+            antigen_theme:
+              name: robbyrussell
+            antigen_bundles:
+              - name: git
+              - name: docker
+              - name: sudo
+              - name: command-not-found
+              - name: ssh-agent
+              - name: zsh-completions
+                url: zsh-users/zsh-completions
+              - name: zsh-autosuggestions
+                url: zsh-users/zsh-autosuggestions
+              - name: zsh-syntax-highlighting
+                url: zsh-users/zsh-syntax-highlighting
+    - role: zsh
