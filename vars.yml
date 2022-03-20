@@ -16,9 +16,7 @@ essential_packages:
 # Packages that do not need to be installed on every host but are often needed
 additional_packages:
   - vlc
-  - discord
   - qbittorrent
-  - calibre
   - wireshark
   - docker
   - qalculate-kde
