@@ -10,12 +10,12 @@ tickle () {
 }
 alias tick=tickle
 
-buy () {
+addbuy () {
   echo "$@" >> ~/notes/buy.txt
 }
-read () {
+addread () {
   echo "$@" >> ~/notes/read.txt
 }
-travel () {
+addtravel () {
   echo "$@" >> ~/notes/travel.txt
 }
