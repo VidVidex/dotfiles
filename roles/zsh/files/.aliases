@@ -3,19 +3,22 @@ alias update="sudo dnf update && flatpak update"
 alias in='task add +in'
 alias ti='task in'
 
-tickle () {
-    deadline=$1
-    shift
-    in +tickle wait:"$deadline" "$@"
+tickle() {
+  deadline=$1
+  shift
+  in +tickle wait:"$deadline" "$@"
 }
 alias tick=tickle
 
-addbuy () {
-  echo "$@" >> ~/notes/buy.txt
+addbuy() {
+  echo "$@" >>~/notes/buy.txt
+  cat ~/notes/buy.txt
 }
-addread () {
-  echo "$@" >> ~/notes/read.txt
+addread() {
+  echo "$@" >>~/notes/read.txt
+  cat ~/notes/read.txt
 }
-addtravel () {
-  echo "$@" >> ~/notes/travel.txt
+addtravel() {
+  echo "$@" >>~/notes/travel.txt
+  cat ~/notes/travel.txt
 }
