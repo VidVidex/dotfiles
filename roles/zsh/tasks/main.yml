@@ -11,3 +11,11 @@
     line: 'source ~/.aliases'
     create: yes
     mode: 'u=rw,go=r'
+
+- name: Enable ssh-agent
+  lineinfile:
+    path: '~/.zshrc'
+    line: 'zstyle :omz:plugins:ssh-agent agent-forwarding yes'
+    create: yes
+    mode: 'u=rw,go=r'
+
