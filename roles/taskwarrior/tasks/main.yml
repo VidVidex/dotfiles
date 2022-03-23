@@ -24,10 +24,10 @@
   loop:
     - src: files/ca.cert.pem
       dest: ~/.task/ca.cert.pem
-    - src: files/Vid_Smole.cert.pem
-      dest: ~/.task/Vid_Smole.cert.pem
-    - src: files/Vid_Smole.key.pem
-      dest: ~/.task/Vid_Smole.key.pem
+    - src: files/vid.cert.pem
+      dest: ~/.task/vid.cert.pem
+    - src: files/vid.key.pem
+      dest: ~/.task/vid.key.pem
 
 - name: Create a cronjob for syncing with taskserver
   cron:

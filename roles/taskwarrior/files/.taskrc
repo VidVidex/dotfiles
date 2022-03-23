@@ -35,7 +35,7 @@ report.in.filter = status:pending limit:page (+in)
 report.in.labels = ID,Description
 
 taskd.ca=/home/vid/.task/ca.cert.pem
-taskd.certificate=/home/vid/.task/Vid_Smole.cert.pem
-taskd.key=/home/vid/.task/Vid_Smole.key.pem
-taskd.server=ritchie.home.vidsmole.com:53589
-taskd.credentials=Smole/Vid Smole/7aa6fddc-26e1-46c6-ae8e-5a5970b7e9ba
+taskd.certificate=/home/vid/.task/vid.cert.pem
+taskd.key=/home/vid/.task/vid.key.pem
+taskd.server=taskd.smole.org:53589
+taskd.credentials=smole/vid/65470fef-b34e-436e-886c-0ea6fcddc4df
