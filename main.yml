@@ -10,6 +10,8 @@
       dest: "{{ dotfile_location }}"
       delete: true
       recursive: true
+      rsync_opts:
+        - "--exclude=.git"
       
   roles:
     - { role: geerlingguy.security, become: true }
