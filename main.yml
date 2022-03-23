@@ -8,7 +8,9 @@
     synchronize:
       src: "{{ playbook_dir }}"
       dest: "{{ dotfile_location }}"
-
+      delete: true
+      recursive: true
+      
   roles:
     - { role: geerlingguy.security, become: true }
     - { role: robertdebock.rpmfusion, become: true }
@@ -24,14 +26,12 @@
     package:
       name: "{{ essential_packages }}"
       state: latest
-      update_cache: true
     become: True
 
   - name: Install additional packages
     package:
       name: "{{ additional_packages }}"
       state: latest
-      update_cache: true
     become: True
     when: install_additional_packages is defined and install_additional_packages
 
