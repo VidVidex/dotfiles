@@ -5,3 +5,4 @@
     dest: ~/.config/kglobalshortcutsrc
     state: link
     force: True
+  become_user: vid
