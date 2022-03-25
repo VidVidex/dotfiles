@@ -3,7 +3,6 @@
   package:
     name: git
     state: latest
-    update_cache: true
   become: True
 
 - name: Symlink .gitconfig

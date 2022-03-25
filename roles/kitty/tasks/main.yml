@@ -3,7 +3,6 @@
   package:
     name: kitty
     state: latest
-    update_cache: true
   become: True
 
 - name: Create kitty config directory

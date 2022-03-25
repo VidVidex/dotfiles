@@ -3,7 +3,6 @@
   package:
     name: rclone
     state: latest
-    update_cache: true
   become: True
 
 - name: Create rclone directory

@@ -3,7 +3,6 @@
   package:
     name: task
     state: latest
-    update_cache: true
   become: True
 
 - name: Symlink .taskrc
