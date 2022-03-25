@@ -1,6 +1,7 @@
 [ActivityManager]
 _k_friendly_name=Activity Manager
 switch-to-activity-3e57932a-d469-4b69-9888-21d1fbcc1e7c=none,none,Switch to activity "Default"
+switch-to-activity-7edb6df3-f3fb-43cf-8fc7-44b013b470ee=none,none,Switch to activity "Default"
 
 [KDE Keyboard Layout Switcher]
 Switch keyboard layout to English (US)=Meta+Ctrl+Alt+A,none,Switch keyboard layout to English (US)
@@ -22,12 +23,12 @@ display=Display\tMeta+P,Display\tMeta+P,Switch Display
 
 [khotkeys]
 _k_friendly_name=Custom Shortcuts Service
-{3cbf32df-c2d7-40ea-9eae-7494e9283012}=Ctrl+Alt+T,none,Launch Konsole
-{47b4ca9c-061c-4e6f-9408-9675d3506616}=Print,none,Take a screenshot
-{642de1f4-4db4-4063-9186-b31ee3260542}=Meta+C,none,Launch VSCode
-{7353a3c2-723a-4fd0-88f6-3a185c26a08c}=Meta+Return,none,Launch kitty
-{8001640b-653e-4ae8-9ebe-ae3e97c632e4}=Meta+B,none,Launch firefox
+{34039273-8e2f-4b6b-8604-984b6dbe414c}=Meta+B,none,Launch Firefox
+{7159afdf-a0d3-4e70-ac12-ad4b0113cc68}=Meta+Return,none,Launch Kitty
+{9a96435b-88b8-4301-8745-496e057786b8}=Print,none,Take a Screenshot
+{bc7c90eb-d603-4e5d-9aa8-acb91bea4219}=Meta+Q,none,Launch qalculate
 {d03619b6-9b3c-48cc-9d9c-a2aadb485550}=none,none,Search
+{e765b9d0-7f08-40e9-bf7f-53fe4d283b48}=none,none,Launch Konsole
 
 [kmix]
 _k_friendly_name=Audio Volume
@@ -53,9 +54,9 @@ Expose=Ctrl+F9,Ctrl+F9,Toggle Present Windows (Current desktop)
 ExposeAll=Ctrl+F10\tLaunch (C),Ctrl+F10\tLaunch (C),Toggle Present Windows (All desktops)
 ExposeClass=Ctrl+F7,Ctrl+F7,Toggle Present Windows (Window class)
 Increase Opacity=none,,Increase Opacity of Active Window by 5 %
-Invert Screen Colors=none,,Invert Screen Colors
+Invert Screen Colors=none,,Invert Screen Colours
 Kill Window=Ctrl+Alt+Esc,Ctrl+Alt+Esc,Kill Window
-MoveMouseToCenter=Meta+F6,Meta+F6,Move Mouse to Center
+MoveMouseToCenter=Meta+F6,Meta+F6,Move Mouse to Centre
 MoveMouseToFocus=Meta+F5,Meta+F5,Move Mouse to Focus
 MoveWindowToCenter=Ctrl+Num+5,none,UltrawideWindows: Center Window
 MoveWindowToCenter1=Alt+Num+5,none,UltrawideWindows: Center Window (copy)
@@ -155,7 +156,7 @@ Switch to Screen 4=none,,Switch to Screen 4
 Switch to Screen 5=none,,Switch to Screen 5
 Switch to Screen 6=none,,Switch to Screen 6
 Switch to Screen 7=none,,Switch to Screen 7
-Toggle Night Color=none,none,Toggle Night Color
+Toggle Night Color=none,none,Toggle Night Colour
 Toggle Window Raise/Lower=none,,Toggle Window Raise/Lower
 Walk Through Desktop List=none,,Walk Through Desktop List
 Walk Through Desktop List (Reverse)=none,,Walk Through Desktop List (Reverse)
@@ -176,12 +177,12 @@ Window Fullscreen=none,,Make Window Fullscreen
 Window Grow Horizontal=none,,Expand Window Horizontally
 Window Grow Vertical=none,,Expand Window Vertically
 Window Lower=none,,Lower Window
-Window Maximize=Meta+PgUp,Meta+PgUp,Maximize Window
-Window Maximize Horizontal=none,,Maximize Window Horizontally
-Window Maximize Vertical=none,,Maximize Window Vertically
-Window Minimize=Meta+PgDown,Meta+PgDown,Minimize Window
+Window Maximize=Meta+PgUp,Meta+PgUp,Maximise Window
+Window Maximize Horizontal=none,,Maximise Window Horizontally
+Window Maximize Vertical=none,,Maximise Window Vertically
+Window Minimize=Meta+PgDown,Meta+PgDown,Minimise Window
 Window Move=none,,Move Window
-Window Move Center=none,,Move Window to the Center
+Window Move Center=none,,Move Window to the Centre
 Window No Border=none,,Hide Window Border
 Window On All Desktops=none,,Keep Window on All Desktops
 Window One Desktop Down=Meta+Ctrl+Shift+Down,Meta+Ctrl+Shift+Down,Window One Desktop Down
@@ -298,7 +299,7 @@ clipboard_action=Ctrl+Alt+X,Ctrl+Alt+X,Enable Clipboard Actions
 cycleNextAction=none,,Next History Item
 cyclePrevAction=none,,Previous History Item
 edit_clipboard=none,,Edit Contents…
-manage activities=Meta+Q,Meta+Q,Show Activity Switcher
+manage activities=none,Meta+Q,Show Activity Switcher
 next activity=none,none,Walk through activities
 previous activity=Meta+Shift+Tab,none,Walk through activities (Reverse)
 repeat_action=Ctrl+Alt+R,Ctrl+Alt+R,Manually Invoke Action on Current Clipboard
