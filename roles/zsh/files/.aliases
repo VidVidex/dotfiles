@@ -1,4 +1,4 @@
-alias update="sudo dnf update && flatpak update"
+alias update="sudo dnf update && flatpak update && snap refresh"
 
 alias in='task add +in'
 alias ti='task in'
