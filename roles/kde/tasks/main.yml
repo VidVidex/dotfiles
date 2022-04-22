@@ -1,8 +1,0 @@
----
-- name: Symlink kglobalshortcutsrc
-  file:
-    src: ~/dotfiles/roles/kde/files/kglobalshortcutsrc
-    dest: ~/.config/kglobalshortcutsrc
-    state: link
-    force: True
-  become_user: vid
