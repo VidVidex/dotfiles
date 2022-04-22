@@ -15,4 +15,9 @@
     "C_Cpp.clang_format_fallbackStyle": "LLVM",
     "window.zoomLevel": 1,
     "explorer.confirmDelete": false,
+    "editor.inlineSuggest.enabled": true,
+    "github.copilot.enable": {
+        "*": true
+    },
+    "editor.minimap.enabled": false,
 }
